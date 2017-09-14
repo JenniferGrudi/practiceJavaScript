@@ -8,8 +8,7 @@
 
 
 //this is my constructor in a function
-
-
+(function(){
   var Question = function(question, answer, realAnswer){
     this.question = question; 
     this.answer = answer;
@@ -80,11 +79,20 @@
 
   arrayOfQuestions[q].checkAnswer(guess);
 
+})();
+
+  
+
 
 
 
 
   //7. suppose this code would be plugin for other programmers to use in their code. So make sure that all your code is private and doesn't interfere with the other programmers code (hint: we learned a special technique to do exactly that).
 
+  // example: 
+
+  // (function(){
+  //   all your private function go here
+  // })();
 
 
